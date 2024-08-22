@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 const BlogDetails = () => {
   const allData = useLoaderData();
   return (
-    <div className="p-5">
+    <div className="p-5 d-flex justify-content-center">
       {allData.map((data) => (
         <div key={data.id}>
           <Card style={{ width: "28rem" }}>

@@ -5,7 +5,7 @@ const BlogMid = ({ val }) => {
   const { title, id, content } = val;
   console.log(val);
   return (
-    <div>
+    <div className="col-4">
       <Card style={{ width: "18rem" }}>
         <Card.Body>
           <Card.Title>{title}</Card.Title>

@@ -18,9 +18,11 @@ const Blog = () => {
       <Helmet>
         <title>Blog</title>
       </Helmet>
-      {value.map((val) => (
-        <BlogMid key={val.id} val={val}></BlogMid>
-      ))}
+      <div className="row row-gap-3">
+        {value.map((val) => (
+          <BlogMid key={val.id} val={val}></BlogMid>
+        ))}
+      </div>
     </div>
   );
 };
