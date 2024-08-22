@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
-    <div style={{ marginLeft: "100px", paddingTop: "50px" }}>
+    <div className="mb-5" style={{ marginLeft: "100px", paddingTop: "50px" }}>
       <Helmet>
         <title>Contact</title>
       </Helmet>
@@ -13,6 +13,7 @@ const Contact = () => {
           <input
             type="email"
             className="form-control w-50"
+            required
             placeholder="Your name"
           />
         </div>
@@ -20,6 +21,7 @@ const Contact = () => {
           <label className="form-label fw-bold">Email address</label>
           <input
             type="email"
+            required
             className="form-control w-50"
             placeholder="Email Address"
           />
@@ -28,6 +30,7 @@ const Contact = () => {
           <label className="form-label fw-bold">Your Message</label>
           <textarea
             className="form-control w-50"
+            required
             placeholder="Message"
             rows="6"></textarea>
         </div>

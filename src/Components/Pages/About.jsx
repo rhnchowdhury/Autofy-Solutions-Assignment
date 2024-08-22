@@ -3,7 +3,7 @@ import image from "../../assets/raihan.png";
 import { Helmet } from "react-helmet-async";
 const About = () => {
   return (
-    <div className="mt-4">
+    <div className="mt-4 mb-4">
       <Helmet>
         <title>About</title>
       </Helmet>
