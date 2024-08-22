@@ -39,9 +39,6 @@ const HomeInfo = () => {
               longer.
             </Card.Text>
           </Card.Body>
-          {/* <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer> */}
         </Card>
       </CardGroup>
     </div>

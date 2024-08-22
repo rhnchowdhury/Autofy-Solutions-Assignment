@@ -1,14 +1,20 @@
 import { Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const BlogMid = ({ val }) => {
-  const { title, type, content, status } = val;
+  const { title, id, content } = val;
+  console.log(val);
   return (
     <div>
       <Card style={{ width: "18rem" }}>
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{content.slice(0, 100) + "..."}</Card.Text>
-          <Button variant="primary">Details</Button>
+          <Link to={`/blog/${id}`}>
+            <Button style={{ backgroundColor: "#FE6F00", border: "none" }}>
+              Details
+            </Button>
+          </Link>
         </Card.Body>
       </Card>
     </div>
