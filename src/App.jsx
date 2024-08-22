@@ -2,11 +2,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { RouterProvider } from "react-router-dom";
 import router from "./Components/Layout/Route";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
+      <HelmetProvider>
+        <RouterProvider router={router}></RouterProvider>
+      </HelmetProvider>
     </>
   );
 }
