@@ -1,7 +1,6 @@
 import { Button, Card } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
 import { Link, useLoaderData } from "react-router-dom";
-import DltBlog from "../DltBlogs/DltBlog";
 
 const BlogDetails = () => {
   const allData = useLoaderData();
