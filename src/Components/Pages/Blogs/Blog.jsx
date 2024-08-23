@@ -9,7 +9,6 @@ const Blog = () => {
       .then((res) => res.json())
       .then((data) => {
         setValue(data);
-        console.log(data);
       })
       .catch((err) => console.log(err));
   }, []);

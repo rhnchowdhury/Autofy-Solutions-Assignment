@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const BlogMid = ({ val }) => {
   const { title, id, content } = val;
-  console.log(val);
   return (
     <div className="col-4">
       <Card style={{ width: "18rem" }}>

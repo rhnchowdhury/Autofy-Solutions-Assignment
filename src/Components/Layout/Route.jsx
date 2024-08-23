@@ -6,7 +6,6 @@ import Contact from "../Pages/Contact";
 import Blog from "../Pages/Blogs/Blog";
 import BlogDetails from "../Pages/Blogs/BlogDetails";
 import UpdateBlog from "../Pages/Blogs/UpdateBlog";
-// import CreateBlog from "../Pages/AddBlog/CreateBlog";
 
 const router = createBrowserRouter([
   {
@@ -25,10 +24,6 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>,
       },
-      // {
-      //   path: "/create",
-      //   element: <CreateBlog></CreateBlog>,
-      // },
       {
         path: "/blog",
         element: <Blog></Blog>,
