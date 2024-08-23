@@ -1,9 +1,22 @@
 import { Button, Card } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
 import { Link, useLoaderData } from "react-router-dom";
+import DltBlog from "../DltBlogs/DltBlog";
 
 const BlogDetails = () => {
   const allData = useLoaderData();
+
+  const handleDelete = (id) => {
+    fetch(`http://localhost:4000/blog/${id}`, {
+      method: "DELETE",
+    })
+      .then((res) => {
+        console.log(res);
+        window.location.reload();
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div className="p-5 d-flex justify-content-center">
       {allData.map((data) => (
@@ -22,7 +35,12 @@ const BlogDetails = () => {
                     Update
                   </Button>
                 </Link>
-                <Button className="btn-danger">Delete</Button>
+                {/* <DltBlog></DltBlog> */}
+                <Button
+                  className="btn-danger"
+                  onClick={(e) => handleDelete(data.id)}>
+                  Delete
+                </Button>
               </div>
             </Card.Body>
           </Card>
