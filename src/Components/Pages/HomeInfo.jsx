@@ -2,7 +2,7 @@ import { Card, CardGroup } from "react-bootstrap";
 import img1 from "../../assets/raincloud.png";
 import img2 from "../../assets/khukumoni.png";
 import img3 from "../../assets/ideabd.png";
-
+import CreateBlog from "./AddBlog/CreateBlog";
 const HomeInfo = () => {
   return (
     <div>
@@ -41,6 +41,7 @@ const HomeInfo = () => {
           </Card.Body>
         </Card>
       </CardGroup>
+      <CreateBlog></CreateBlog>
     </div>
   );
 };
